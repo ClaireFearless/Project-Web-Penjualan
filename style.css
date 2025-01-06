@@ -1,0 +1,235 @@
+/* Gaya umum untuk halaman */
+/* Gaya umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .tombol {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .tombol:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Efek hover untuk memberi kesan tombol membesar */
+}
+
+header .nav-links {
+    margin-top: 10px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #ff7f50;
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Laptop List (Grid) */
+.laptop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Laptop Item Styling */
+.laptop-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.laptop-item img {
+    width: 100%; /* Membuat gambar mengisi kontainer secara proporsional */
+    height: 200px; /* Menetapkan tinggi gambar agar seragam */
+    object-fit: cover; /* Memastikan gambar tidak pecah dan tetap terjaga proporsinya */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.laptop-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    height: 40px; /* Menetapkan tinggi judul agar seragam */
+    overflow: hidden; /* Menghindari judul yang terlalu panjang */
+}
+
+.laptop-item p {
+    margin: 5px 0;
+    height: 60px; /* Menetapkan tinggi deskripsi agar seragam */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.laptop-item a.tombol {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.laptop-item a.tombol:hover {
+    background-color: #0056b3;
+}
+
+.tombol:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Tambahkan aturan untuk textarea deskripsi */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+table td {
+    word-wrap: break-word;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+/* Keranjang Belanja */
+.keranjang-list {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td img {
+    max-width: 100px;
+}
+
+.total-harga {
+    text-align: right;
+    font-size: 18px;
+}
+
+.total-harga .tombol {
+    margin-top: 20px;
+    background-color: #28a745;
+}
+
+.total-harga .tombol:hover {
+    background-color: #218838;
+}
